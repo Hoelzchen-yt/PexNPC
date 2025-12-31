@@ -23,7 +23,7 @@ public class PexNPCBootstrap implements PluginBootstrap {
             IDArgument idArgument = new IDArgument();
             HelpSubcommand helpSubcommand = new HelpSubcommand();
 
-            LiteralCommandNode<CommandSourceStack> advancedCommandRoot = Commands.literal("pexnpc")
+            LiteralCommandNode<CommandSourceStack> advancedCommandRoot = Commands.literal("npc")
                     .requires(commandSourceStack -> commandSourceStack.getSender().hasPermission("pexnpc.command"))
                     .then(Commands.literal("help")
                             .executes(helpSubcommand))
